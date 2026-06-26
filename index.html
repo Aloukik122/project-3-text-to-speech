@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(45deg, #010758, #490d61);
+      }
+
+      .hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      h1 {
+        color: whitesmoke;
+        font-size: 40px;
+      }
+      .hero textarea {
+        width: 600px;
+        height: 250px;
+        background-color: #403d84;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0px;
+      }
+      textarea::placeholder {
+        font-size: 20px;
+        color: #ddd;
+      }
+      button {
+        background: #ff2963;
+        color: whitesmoke;
+        font-size: 16px;
+        border-radius: 35px;
+        border: none;
+        padding: 5px 20px;
+      }
+      select {
+        flex: 1;
+        color: whitesmoke;
+        background: #403d84;
+        height: 40px;
+        padding: 0px 20px;
+        outline: 0;
+        border: none;
+        border-radius: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Text TO Speech Converter</h1>
+      <textarea placeholder="Write anything here...."></textarea>
+      <div class="row">
+        <select></select>
+        <button>Listion</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
